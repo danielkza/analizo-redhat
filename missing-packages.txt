@@ -1,0 +1,18 @@
+-- Package: analizo
+Unsatisfied Requires: doxyparse
+Unsatisfied Requires: perl(App::Cmd) --- Fedora
+Unsatisfied Requires: perl(CHI) --- Fedora
+Unsatisfied Requires: perl(Graph) --- EPEL
+Unsatisfied Requires: perl(Graph::Writer::Dot) --- EPEL
+Unsatisfied Requires: perl(Graph::Writer::DSM) --- Ours
+Unsatisfied Requires: perl(Mojolicious) --- Fedora
+Unsatisfied Requires: perl(Statistics::Descriptive) --- EPEL
+Unsatisfied Requires: perl(Term::ProgressBar) --- EPEL
+Unsatisfied Requires: perl(ZeroMQ) --- Fedora
+Unsatisfied BuildRequires: doxyparse --- Ours
+Unsatisfied BuildRequires: perl(File::LibMagic) --- EPEL
+Unsatisfied BuildRequires: perl(Method::Signatures) --- Fedora
+Unsatisfied BuildRequires: perl(Test::BDD::Cucumber) --- Ours
+-- Package: perl-Graph-Writer-DSM
+Unsatisfied Requires: perl(Mojo::Template) --- perl(Mojolicious)
+Unsatisfied BuildRequires: perl(Test::TempDir) --- Fedora

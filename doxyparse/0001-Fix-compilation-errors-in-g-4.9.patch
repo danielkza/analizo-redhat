@@ -1,0 +1,25 @@
+From c6657e8e38a08bf7668539e6566c1f398c1594ef Mon Sep 17 00:00:00 2001
+From: Daniel Miranda <danielkza2@gmail.com>
+Date: Wed, 8 Apr 2015 16:23:58 -0300
+Subject: [PATCH] Fix compilation errors in g++ 4.9
+
+---
+ qtools/qvaluestack.h | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/qtools/qvaluestack.h b/qtools/qvaluestack.h
+index 3fb61fd..7438fcb 100644
+--- a/qtools/qvaluestack.h
++++ b/qtools/qvaluestack.h
+@@ -49,7 +49,7 @@ class Q_EXPORT QValueStack : public QValueList<T>
+ public:
+     QValueStack() {}
+    ~QValueStack() {}
+-    void  push( const T& d ) { append(d); }
++    void  push( const T& d ) { this->append(d); }
+     T pop()
+     {
+ 	T elem( this->last() );
+-- 
+2.1.0
+
