@@ -1,18 +1,49 @@
 -- Package: analizo
 Unsatisfied Requires: doxyparse
-Unsatisfied Requires: perl(App::Cmd) --- Fedora
-Unsatisfied Requires: perl(CHI) --- Fedora
-Unsatisfied Requires: perl(Graph) --- EPEL
-Unsatisfied Requires: perl(Graph::Writer::Dot) --- EPEL
-Unsatisfied Requires: perl(Graph::Writer::DSM) --- Ours
-Unsatisfied Requires: perl(Mojolicious) --- Fedora
-Unsatisfied Requires: perl(Statistics::Descriptive) --- EPEL
-Unsatisfied Requires: perl(Term::ProgressBar) --- EPEL
-Unsatisfied Requires: perl(ZeroMQ) --- Fedora
-Unsatisfied BuildRequires: doxyparse --- Ours
-Unsatisfied BuildRequires: perl(File::LibMagic) --- EPEL
-Unsatisfied BuildRequires: perl(Method::Signatures) --- Fedora
-Unsatisfied BuildRequires: perl(Test::BDD::Cucumber) --- Ours
+Unsatisfied Requires: perl(App::Cmd)
+Unsatisfied Requires: perl(CHI)
+Unsatisfied Requires: perl(File::Share)
+Unsatisfied Requires: perl(FindBin::libs)
+Unsatisfied Requires: perl(Graph)
+Unsatisfied Requires: perl(Graph::Writer::Dot)
+Unsatisfied Requires: perl(Graph::Writer::DSM) >= 0.005
+Unsatisfied Requires: perl(Mojolicious)
+Unsatisfied Requires: perl(Statistics::Descriptive)
+Unsatisfied Requires: perl(Term::ProgressBar)
+Unsatisfied Requires: perl(ZeroMQ)
+Unsatisfied BuildRequires: doxyparse
+Unsatisfied BuildRequires: perl(File::LibMagic)
+Unsatisfied BuildRequires: perl(Method::Signatures)
+Unsatisfied BuildRequires: perl(Test::BDD::Cucumber)
+Unsatisfied BuildRequires: perl(App::Cmd)
+Unsatisfied BuildRequires: perl(CHI)
+Unsatisfied BuildRequires: perl(File::Share)
+Unsatisfied BuildRequires: perl(FindBin::libs)
+Unsatisfied BuildRequires: perl(Graph)
+Unsatisfied BuildRequires: perl(Graph::Writer::Dot)
+Unsatisfied BuildRequires: perl(Graph::Writer::DSM) >= 0.005
+Unsatisfied BuildRequires: perl(Mojolicious)
+Unsatisfied BuildRequires: perl(Statistics::Descriptive)
+Unsatisfied BuildRequires: perl(Term::ProgressBar)
+Unsatisfied BuildRequires: perl(ZeroMQ)
+-- Package: doxyparse
+doxyparse-debuginfo
+-- Package: perl-Chart-Gnuplot
+-- Package: perl-File-Share
+-- Package: perl-FindBin-libs
+-- Package: perl-Graph-ReadWrite
+Unsatisfied Requires: perl(Graph) >= 0.5
+Unsatisfied BuildRequires: perl(Graph) >= 0.5
 -- Package: perl-Graph-Writer-DSM
-Unsatisfied Requires: perl(Mojo::Template) --- perl(Mojolicious)
-Unsatisfied BuildRequires: perl(Test::TempDir) --- Fedora
+Unsatisfied Requires: perl(Chart::Gnuplot)
+Unsatisfied Requires: perl(Graph::Writer)
+Unsatisfied Requires: perl(Mojo::Template)
+Unsatisfied BuildRequires: perl(Chart::Gnuplot)
+Unsatisfied BuildRequires: perl(Graph)
+Unsatisfied BuildRequires: perl(Graph::Writer)
+Unsatisfied BuildRequires: perl(Mojo::Template)
+Unsatisfied BuildRequires: perl(Test::TempDir)
+-- Package: perl-Number-Range
+-- Package: perl-Test-BDD-Cucumber
+Unsatisfied Requires: perl(Number::Range)
+Unsatisfied BuildRequires: perl(Number::Range)
