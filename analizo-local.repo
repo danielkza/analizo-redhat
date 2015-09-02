@@ -1,0 +1,6 @@
+[analizo-local]
+name=Analizo Local Repository
+baseurl=file:///root/analizo/rpms
+enabled=1
+gpgcheck=0
+metadata_expire=1s

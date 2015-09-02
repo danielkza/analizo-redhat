@@ -5,7 +5,7 @@ Summary:        Plot graph using Gnuplot in Perl on the fly
 License:        GPL+ or Artistic
 Group:          Development/Libraries
 URL:            http://search.cpan.org/dist/Chart-Gnuplot/
-Source0:        http://www.cpan.org/authors/iApd/K/KW/KWMAK/Chart/Gnuplot/Chart-Gnuplot-%{version}.tar.gz
+Source0:        http://search.cpan.org/CPAN/authors/id/K/KW/KWMAK/Chart/Gnuplot/Chart-Gnuplot-0.23.tar.gz
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 BuildArch:      noarch
 BuildRequires:  perl(Carp) >= 1.04

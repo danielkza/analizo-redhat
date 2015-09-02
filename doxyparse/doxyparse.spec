@@ -2,7 +2,7 @@
 
 Name:           doxyparse
 Version:        1.5.9
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Multi-language source code analyzer
 
 Group:          Development/Languages
@@ -36,15 +36,14 @@ tools.
 CFLAGS="${CFLAGS:-%optflags}" CXXFLAGS="${CXXFLAGS:-%optflags}" ./configure --prefix %{_prefix} --with-doxyparse
 
 %build
-%make_build
+%{__make} %{?_smp_mflags}
 
 %install
-%make_install
+%{__make} install DESTDIR=%{?buildroot}
 
 # We don't want the actual doxygen executable
-
-rm %{buildroot}%{_prefix}/bin/doxygen
-rm %{buildroot}%{_prefix}/man/man1/doxygen*
+rm -f %{buildroot}%{_prefix}/bin/doxygen
+rm -f %{buildroot}%{_prefix}/man/man1/doxygen*
 
 %if "%{_prefix}/man/man1" != "%{_mandir}/man1"
   %{__mkdir_p} %{buildroot}%{_mandir}/man1
@@ -63,6 +62,9 @@ rm %{buildroot}%{_prefix}/man/man1/doxygen*
 %{_mandir}/man1/*
 
 %changelog
+
+* Wed Sep 2 2015 Daniel Miranda
+- Packaging fixes
 
 * Thu Mar 19 2015 Daniel Miranda
 - Initial Packaging

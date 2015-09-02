@@ -1,0 +1,18 @@
+FROM fedora:22
+MAINTAINER Daniel Miranda <danielkza2@gmail.com>
+
+VOLUME /var/cache/dnf
+RUN echo 'keepcache=1' >> /etc/dnf/dnf.conf
+
+RUN dnf -y upgrade
+RUN dnf -y install which sudo git dnf-plugins-core rpmdevtools rpm-sign createrepo rsync make automake gcc gcc-c++ 
+
+ADD doxyparse /root/analizo/doxyparse/
+ADD analizo /root/analizo/analizo/
+ADD deps /root/analizo/deps/
+
+ADD analizo-local.repo /etc/yum.repos.d/
+ADD build.sh /root/analizo/
+
+WORKDIR /root/analizo
+CMD ["/root/analizo/build.sh"]
